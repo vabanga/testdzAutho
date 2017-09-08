@@ -27,7 +27,7 @@ if(!isset($_GET['act'])){
 
 }else{
 	if(!empty($_GET['act']=='admin')){
-		include_once 'admin.php';
+		include_once 'downloadTest.php';
 	}
 	if(!empty($_GET['act']=='list')){
 		include_once 'list.php';
@@ -38,11 +38,11 @@ if(!isset($_GET['act'])){
 
 }
 
-if(!empty($_POST['redirect'])){
-	header('Location: index.php');
+if(!empty($_POST['naGlav'])){
+	header('Location: addTestAndList.php');
 }
 if(!empty($_POST['Act'])){
-	header('Location: admin.php');
+	header('Location: downloadTest.php');
 }
 if(!empty($_POST['List'])){
 	header('Location: list.php');
